@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+:root {
+  --full-width: 100%;
+  --cta-text-bg-color: rgb(166, 242, 204);    //mint green
+}
+
+#policy-div {
+  background-color: var(--cta-text-bg-color);
+  height: 30px;
+  width: var(--full-width);
+  margin-bottom: 25px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+#header-img {
+  max-width: 2.3em;
+}
+
+#header-name {
+  font-family: 'Anton', sans-serif;
+}
+
+#nav-bar {
+  align-self: center;
+  margin-left: auto;
+  width: 15em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#nav-link {
+  font-size: 0.7em;
+}
+
+a {
+  
+}
+
+#center-div {
+  max-width: 100%;
+  margin: 0 auto;  
+}
+
+#hero-image {
+  height: 500px;
+  background:
+    #fff
+    url(https://www.dropbox.com/s/m6wmxknnars6x3h/green-energy.jpg?dl=1) no-repeat center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: auto 100%;
+  background-position: center right;
+}
+
+form {
+  height: 600px;
+}
+
