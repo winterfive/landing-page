@@ -1,4 +1,4 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
 
 <html>
 
@@ -6,30 +6,75 @@
 </head>
 
 <body>
-  <div id="policy-div"></div
+  <div id="fixed-div">
+  <div id="policy-div" class="bg-color"></div>
   <header id="header">
     <img id="header-img" src="https://www.dropbox.com/s/jz1x1cfzgkdc701/climatChangePartnership_noText.jpg?dl=1" alt="A modern company logo">
     <h3 id="header-name">Company Name</h3>
     <nav id="nav-bar">
       <a class="nav-link">home</a>
-      <a class="nav-link">about</a>
-      <a class="nav-link">faq</a>
-      <a class="nav-link">contact</a>
+      <a class="nav-link" href="#about">about</a>
+      <a class="nav-link" href="#products">products</a>
+      <a class="nav-link" href="#insights">insights</a>
     </nav>
   </header>
-  <div id=center-div>
-    <div id="hero-image"> large image here w/ caption and email submission here</div>
-    <div>embedded video here</div>
-    <div>link1 stuff here</div>
-    <div>link1 stuff here</div>
-    <div>link1 stuff here</div>
-    <form id="form">
-      <div id="email">email form input field</div>
-      <div id="submit">submit button</div>
-    </form>
+  
 
+  <div class="hr"></div>
+    </div>
+
+  <div id="hero-div">
+    <div id="hero-form">
+      <div id="hero-text">Empower and encourage your people</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <form id="form" method="GET" action="https://freecodecamp.com/email-submit">
+        <div id="email-flex" class="bg-color">
+          <div>
+            <input type="email" name="email" id="email" class="input-field" required placeholder="enter your email address" required>
+          </div>
+          <div>
+            <button id="submit" class="button" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="hero-img"></div>
   </div>
+
+  <div class="content-bg bg-color content-pad-top">
+    <div class="content-div">
+      <div><img class="item-img round-img" src="https://www.dropbox.com/s/060igby4jtknp5t/log.png?dl=1" alt="a tree stump"></div>
+      <div class="item-copy">
+        <div class="item-header" id="about">About our Team</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-color">
+    <div class="content-div">
+      <div><img class="item-img round-img" src="https://www.dropbox.com/s/kmuw87r7u9imewh/fire-tree.png?dl=1" alt="a tree on fire"></div>
+      <div class="item-copy">
+        <div class="item-header" id="products">Our Products</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bg-color">
+    <div class="content-div">
+      <div><img class="item-img round-img" src="https://www.dropbox.com/s/2kfohks60ivagmi/team.png?dl=1" alt="a team in a workplace"></div>
+      <div class="item-copy">
+        <div class="item-header" id="insights">Latest and Greatest</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="video"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/229854054?color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+
+  <footer></footer>
 </body>
-<footer></footer>
 
 </html>
