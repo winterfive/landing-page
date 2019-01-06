@@ -1,30 +1,61 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300, 400");
 
 :root {
   --full-width: 100%;
-  --cta-text-bg-color: rgb(166, 242, 204);    //mint green
+  --bg-color: rgb(166, 242, 204); /* mint green */
+  --neutral-color: rgb(222, 222, 222); /* light gray */
+  --font-size: 1em;
+  --main-width: 890px;
+}
+
+body {
+  margin: 0;
+  font-size: var(--font-size);
+}
+
+#fixed-div {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 125px;
+}
+
+.bg-color {
+  background-color: var(--bg-color);
 }
 
 #policy-div {
-  background-color: var(--cta-text-bg-color);
   height: 30px;
   width: var(--full-width);
   margin-bottom: 25px;
+}
+
+.hr {
+  background-color: var(--neutral-color);
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  border-top: 1px solid var(--neutral-color);
+  margin-bottom: 3em;
 }
 
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  width: var(--main-width);
+  margin: 0 auto;
 }
 
 #header-img {
-  max-width: 2.3em;
+  max-width: 3em;
 }
 
 #header-name {
-  font-family: 'Anton', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
 }
 
 #nav-bar {
@@ -37,32 +68,185 @@ header {
   justify-content: space-around;
 }
 
-#nav-link {
-  font-size: 0.7em;
+.nav-link {
+  font-size: 0.9em;
 }
 
 a {
-  
+  text-decoration: none;
+  color: #000;
 }
 
-#center-div {
-  max-width: 100%;
-  margin: 0 auto;  
+a:hover {
+  border-bottom: 3px solid var(--neutral-color);
 }
 
-#hero-image {
-  height: 500px;
-  background:
-    #fff
-    url(https://www.dropbox.com/s/m6wmxknnars6x3h/green-energy.jpg?dl=1) no-repeat center;
+#hero-div {
+  display: flex;
+  flex-direction: row;
+  width: var(--main-width);
+  margin: 0 auto;
+  padding-top: 240px;
+}
+
+#hero-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+#hero-text {
+  font-size: 2.4em;
+  font-family: "Montserrat", sans-serif;
+}
+
+#email-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 340px;
+  height: 40px;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+.input-field {
+  min-width: 220px;
+}
+
+.button {
+  border-radius: 3px;
+  background-color: rgb(7, 68, 195);
+  border: 1px solid rgb(7, 68, 195);
+  color: #fff;
+  padding: 7px;
+}
+
+#hero-img {
+  width: 100%;
+  background: #fff
+    url(https://www.dropbox.com/s/m6wmxknnars6x3h/green-energy.jpg?dl=1)
+    no-repeat center;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: auto 100%;
-  background-position: center right;
 }
 
-form {
-  height: 600px;
+.content-bg {
+  margin-top: 80px;
 }
 
+.content-pad-top {
+  padding-top: 90px;
+}
+
+.content-div {
+  margin: 0 auto;
+  max-width: var(--main-width);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px;
+}
+
+.round-img {
+  border-radius: 20%;
+  padding: 50px;
+}
+
+.item-img {
+  background-color: #fff;
+  width: 200px;
+  height: auto;
+}
+
+.item-copy {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding-left: 50px;
+}
+
+.item-header {
+  font-size: 1.8em;
+  font-family: "Montserrat", sans-serif;
+}
+
+#video {
+  padding: 190px 0 150px 0;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 400px) and (max-width: 890px) {
+  :root {
+    --main-width: 80%;
+  }
+
+  #hero-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  :root {
+    --main-width: 90%;
+  }
+
+  #hero-img {
+    display: none;
+  }
+
+  #header-name {
+    display: none;
+  }
+
+  #email-flex {
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    height: 50px;
+    padding: 2em;
+    border-radius: 10px;
+  }
+
+  #submit {
+    margin-top: 15px;
+  }
+
+  .content-pad-top {
+    padding-top: 10px;
+  }
+  
+  .content-div {
+    padding: 40px 20px 40px 20px;
+  }
+  
+  
+}
+
+@media screen and (max-width: 720px) {
+  .content-div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .item-img {
+    width: 150px;
+    height: auto;
+  }
+
+  .item-header {
+    margin-top: 20px;
+  }
+
+  .item-copy {
+    margin: 0 auto;
+    padding-left: 0px;
+    max-width: 90%;
+  }
+}
