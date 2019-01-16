@@ -3,6 +3,9 @@
 <html>
 
 <head>
+  <title>Generic Landing Page Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -35,10 +38,9 @@
       </form>
     </div>
     <div id="hero-img"></div>
-    </div>
+  </div>
 
-  <div class="content-bg bg-color content-pad-top">
-    <div id="about"></div>
+  <div id="about" class="content-bg bg-color content-pad-top">
     <div class="content-div">
       <div><img class="item-img round-img" src="https://www.dropbox.com/s/060igby4jtknp5t/log.png?dl=1" alt="a tree stump"></div>
       <div class="item-copy">
@@ -48,8 +50,7 @@
     </div>
   </div>
 
-  <div class="bg-color">
-    <div id="products"></div>
+  <div id="products" class="bg-color">
     <div class="content-div">
       <div><img class="item-img round-img" src="https://www.dropbox.com/s/kmuw87r7u9imewh/fire-tree.png?dl=1" alt="a tree on fire"></div>
       <div class="item-copy">
@@ -60,12 +61,11 @@
     </div>
   </div>
 
-  <div class="bg-color">
-    <div id="insights"></div>
+  <div id="insights" class="bg-color">
     <div class="content-div">
       <div><img class="item-img round-img" src="https://www.dropbox.com/s/2kfohks60ivagmi/team.png?dl=1" alt="a team in a workplace"></div>
       <div class="item-copy">
-        <div class="item-header">Our Process</div>
+        <div class="item-header">Insight into our Process</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
@@ -78,18 +78,13 @@
 
   <footer>
     <div>
-      <h2>Reach out</h3><br>
-      US<br>
-      415 Main Street<br>
-      Suite 500<br>
-      Cloverfield, New York 34567<br><br>
-      <a href="#">(888) 888-0000</a><br><br>
-      France<br>
-      71 rue des Saints-Pères<br>
-      75006 Paris<br><br>
-      <a href="#">06 23 12 45 54</a><br><br>
-      <a href="#">info@companyname.com</a>
-      
+      <h2>Reach out</h3><br> US
+        <br> 415 Main Street<br> Suite 500<br> Cloverfield, New York 34567<br><br>
+        <a href="#">(888) 888-0000</a><br><br> France
+        <br> 71 rue des Saints-Pères<br> 75006 Paris<br><br>
+        <a href="#">06 23 12 45 54</a><br><br>
+        <a href="#">info@companyname.com</a>
+
     </div>
     <div class="footer-list">
       <h2>Follow</h2><br>
@@ -97,9 +92,9 @@
       <a href="#">twitter</a><br>
       <a href="#">instagram</a><br>
       <a href="#">vimeo</a><br>
-      <a href="#">youtube</a>      
+      <a href="#">youtube</a>
     </div>
-    
+
     <div class="footer-list">
       <h2>Find</h2><br>
       <a href="#">sitemap</a><br>
@@ -107,8 +102,31 @@
       <a href="#">privacy policy</a><br>
       <a href="#">copyright policy</a>
     </div>
-    
+
   </footer>
+
+  <!-- smooth scrolling script -->
+  <script>
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 600, function() {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
 </body>
 
 </html>
