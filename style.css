@@ -241,14 +241,14 @@ footer a:hover {
   .content-pad-top {
     padding-top: 10px;
   }
-  
+
   .content-div {
     padding: 40px 20px 40px 20px;
   }
-  
+
   #video-div {
-  padding: 10px 0 80px 0;
-  }  
+    padding: 10px 0 80px 0;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -271,16 +271,16 @@ footer a:hover {
     padding-left: 0px;
     max-width: 90%;
   }
-  
-  footer {
-  height: 800px;
-  flex-direction: column;
-  align-content: space-around;
-  padding: 40px 0px 40px 60px;
-}
 
-.footer-list {
-  padding: 30px 0 30px 0;
+  footer {
+    height: 800px;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 40px 0px 40px 60px;
+  }
+
+  .footer-list {
+    padding: 30px 0 30px 0;
   }
 }
 
